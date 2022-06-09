@@ -6,21 +6,17 @@ const App: Component = () => {
     <div class="bg-true-gray-900 h-screen w-screen text-white font-sans">
       <h1 class="text-center">JSON Formatter</h1>
 
-      <Pre>
-        {`
-    "ip": "2405:201:6804:4072:7d0d:4311:2771:8db4",
-    "colo": "DEL",
-    "city": "Dehradun",
-    "country": "IN",
-    "continent": "AS",
-    "latitude": "30.32200",
-    "longitude": "78.03000",
-    "postalCode": "248001",
-    "region": "Uttarakhand",
-    "regionCode": "UT",
-    "timezone": "Asia/Kolkata"
-    `}
-      </Pre>
+      <div class="mt-8" />
+      <div class="w-full grid grid-cols-2 gap-10 px-4">
+        <textarea
+          placeholder="Paste JSON here"
+          class="p-4 text-red-400 placeholder:text-red-300 focus:outline-none focus:ring focus:ring-red-500 h-48 font-mono resize-y rounded-md border transition ease-in-out bg-dark border-gray-700"
+          // value={value}
+          // onChange={(e) => setValue(e.target.value)}
+        />
+
+        <Pre></Pre>
+      </div>
     </div>
   );
 };

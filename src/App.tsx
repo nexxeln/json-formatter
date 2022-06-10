@@ -37,7 +37,7 @@ const App: Component = () => {
 
           <div class="mt-1" />
           <button
-            class="w-20 px-4 py-2 bg-red-500 rounded-md hover:opacity-80 transition-opacity text-light-900 duration-300 cursor-pointer"
+            class="w-20 px-4 py-2 bg-red-500 rounded-md hover:opacity-80 transition-opacity text-light-900 duration-300 cursor-pointer self-end"
             onClick={parseValue}
           >
             Format
